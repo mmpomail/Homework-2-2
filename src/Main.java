@@ -3,18 +3,20 @@
 public class Main {
     public static void main(String[] args) {
 
-        int balance = 18;
-        int add = 1220;
-        int sum = balance + add;
-
-        System.out.println("Ваш баланс - " + sum + " рублей");
-
-        int bonus = add / 100;
-        if (add < 1000) {
+        int bonus; // начисляемый бонус
+        int balance = 100; //исходный баланс счёта
+        int add = 1100; // сумма пополнения счёта
+        if (add < 1000){
+            bonus = 0;
             System.out.println("Бонусы не получены");
         } else {
+            bonus = add/100;
             System.out.println("Начисленный бонус: " + bonus + " рублей ");
-
         }
+
+        int sum = balance + add + bonus; // баланс счёта после пополнения и добавления бонуса.
+
+        System.out.println("Ваш баланс - " + sum + " рублей"); // отображение текущего баланса после пополнения
+
     }
 }
