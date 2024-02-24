@@ -6,11 +6,11 @@ public class Main {
         int bonus; // начисляемый бонус
         int balance = 100; //исходный баланс счёта
         int add = 1100; // сумма пополнения счёта
-        if (add < 1000){
+        if (add < 1000) {
             bonus = 0;
             System.out.println("Бонусы не получены");
         } else {
-            bonus = add/100;
+            bonus = add / 100;
             System.out.println("Начисленный бонус: " + bonus + " рублей ");
         }
 
